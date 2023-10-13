@@ -1,3 +1,7 @@
+*{
+    overflow: hidden;
+}
+
 body{
     background-color: #171322 !important;
 }
@@ -41,7 +45,52 @@ input{
     /* display: none; */
 }
 
+header{
+    height: 130px;
+}
 
+#imgFuncionario{
+    border-radius: 50%;
+}
+
+#nameFuncionario{
+    color: #fff;
+}
+
+.header-funcionario{
+    width: 500px;
+}
+
+.section-home-funcionario{
+    background-color: #282433;
+    height: 100vh;
+    width: 100%;
+}
+
+.card{
+    width: 250px !important;
+    height: 200px !important;
+    margin: 0 auto;
+    background-color: #7855C3;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: #5b38a7;
+}
+
+.card:focus{
+    background-color: #5b38a7
+}
+
+.card > p{
+    margin-top: 30%;
+    color: #fff;
+}
+
+.section-pages-funcionario{
+    margin-top: 100px;
+}
 
 @media screen and (max-width: 991.98px){
     .img-login{
@@ -53,6 +102,45 @@ input{
         position: absolute;
         margin: 0 auto;
         width: 100%;
+    }
+
+    .btn {
+        background-color: #7855C3 !important;
+        color: #fff;
+    }
+
+    .btn:focus{
+        background-color: #5b38a7
+    }
+
+    #imgFuncionario{
+        width: 70px !important;
+        height: 70px !important;
+
+    }
+    
+    #nameFuncionario{
+        color: #fff;
+        font-size: 20px !important;
+        margin-top: 26px !important;
+    }
+
+    .section-pages-funcionario{
+        display: block !important;
+        margin-top: 0px;
+       
+    }
+
+    .section-home-funcionario{
+        overflow: auto !important;
+    }
+
+    .card{
+        margin-top: 100px;
+    }
+
+    .height-pages-funcionario{
+        height: 1100px;
     }
 }
 

@@ -25,6 +25,7 @@ const usuariosFuncionarios = [
 function logar(){
     let login = document.getElementById('usuario').value;
     let senha = document.getElementById('senha').value;
+    let alert = document.getElementById('alert');
     let validarRH = false;
     let validarFuncionarios = false;
 
@@ -35,7 +36,8 @@ function logar(){
             break
         }else{
             validarRH = false
-            
+            alert.classList.add("show");
+            break
         }
       }
 
@@ -49,14 +51,37 @@ function logar(){
             
         }
       }
-      
-      if(validarRH || validarFuncionarios == true){
-        location.href = "homeFuncionario.html"
-      }else{
-        let alert = document.getElementById('alert');
-
-        alert.show
-        
-      }
     
+}
+
+function windowLocationReload(){
+    window.location.reload()
+}
+
+function AReceber(){
+    location.href = "a_receber.html"
+}
+
+function historicoHolerite(){
+    location.href = "historico_holerite.html"
+}
+
+function historicoSalario(){
+    location.href = "em_desenvolvimento.html"
+}
+
+function pontoEletronico(){
+    location.href = "em_desenvolvimento.html"
+}
+
+function ferias(){
+    location.href = "em_desenvolvimento.html"
+}
+
+function documentos(){
+    location.href = "em_desenvolvimento.html"
+}
+
+function homeFuncionario(){
+    location.href = "homeFuncionario.html"
 }
