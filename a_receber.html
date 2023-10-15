@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="CSS/login.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Start RH</title>
+</head>
+<body>
+    
+    <header class=" d-flex justify-content-end">
+        <span class="material-symbols-outlined m-1" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+            menu_open
+            </span>
+        <div class="header-funcionario d-flex justify-content-around">
+            
+            <h1 class="text-center fs-3 text mt-5" id="nameFuncionario">Luana Nascimento</h1>
+            <img class="mt-3" id="imgFuncionario" src="img/luana.jpg" alt="" width="100px" height="100px" >
+        </div>
+    </header>
+
+
+    <section class="menu">
+        <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+            Toggle static offcanvas
+          </button> -->
+          
+          <div class="offcanvas " data-bs-backdrop="static" tabindex="-1"  aria-labelledby="staticBackdropLabel" >
+            <img onclick="homeFuncionario()" class="mt-2 align-items-center" src="img/logo.png" alt="" width="100px" height="100px" style="cursor: pointer; margin: 0 auto;">
+            <div class="offcanvas-header">
+            </div>
+            <div class="offcanvas-body d-flex align-items-center justify-content-center">
+              <div>
+                <div class="container section-pages-funcionario justify-content-center">
+                    <div onclick="AReceber()" class="my-xxl-5 my-md-1 my-sm-1 card d-flex align-items-center" style="width: 100% !important; height: 73px !important;">
+                        <p class=" fs-4" style="margin-top: 10%;">A Receber</p>
+                    </div>
+                    <div onclick="historicoHolerite()" class="my-xxl-5 my-md-1 my-sm-1 card d-flex align-items-center" style="width: 100% !important; height: 73px !important;">
+                        <p class=" fs-5" style="margin-top: 10%;">Histórico Holerite</p>
+                    </div>
+                    <div onclick="historicoSalario()" class="my-xxl-5 my-md-1 my-sm-1 card d-flex align-items-center" style="width: 100% !important; height: 73px !important;">
+                        <p class=" fs-5" style="margin-top: 10%;">Histórico Salarial</p>
+                    </div>
+
+                    <div onclick="pontoEletronico()" class="my-xxl-5 my-md-1 my-sm-1 card d-flex align-items-center" style="width: 100% !important; height: 73px !important;">
+                        <p class=" fs-5" style="margin-top: 10%;">Ponto Eletrônico</p>
+                    </div>
+                    <div onclick="ferias()" class="my-xxl-5 my-md-1 my-sm-1 card d-flex align-items-center" style="width: 100% !important; height: 73px !important;">
+                        <p class=" fs-4" style="margin-top: 10%;">Férias</p>
+                    </div>
+                    <div onclick="documentos()" class="my-xxl-5 my-md-1 my-sm-1 card d-flex align-items-center" style="width: 100% !important; height: 73px !important;">
+                        <p class=" fs-4" style="margin-top: 10%;">Documentos</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="menu-modal">
+          
+          <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+                <img onclick="homeFuncionario()" class="mt-2 align-items-center" src="img/logo.png" alt="" width="100px" height="100px" style="cursor: pointer; margin: 0 auto;">
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex align-items-center justify-content-center">
+              <div>
+                <div class="container section-pages-funcionario justify-content-center">
+                    <div onclick="AReceber()" class="my-xxl-5 my-md-1 my-sm-1 card d-flex align-items-center" style="width: 100% !important; height: 73px !important;">
+                        <p class=" fs-4" style="margin-top: 10%;">A Receber</p>
+                    </div>
+                    <div onclick="historicoHolerite()" class="my-xxl-5 my-md-1 my-sm-1 card d-flex align-items-center" style="width: 100% !important; height: 73px !important;">
+                        <p class=" fs-5" style="margin-top: 10%;">Histórico Holerite</p>
+                    </div>
+                    <div onclick="historicoSalario()" class="my-xxl-5 my-md-1 my-sm-1 card d-flex align-items-center" style="width: 100% !important; height: 73px !important;">
+                        <p class=" fs-5" style="margin-top: 10%;">Histórico Salarial</p>
+                    </div>
+
+                    <div onclick="pontoEletronico()" class="my-xxl-5 my-md-1 my-sm-1 card d-flex align-items-center" style="width: 100% !important; height: 73px !important;">
+                        <p class=" fs-5" style="margin-top: 10%;">Ponto Eletrônico</p>
+                    </div>
+                    <div onclick="ferias()" class="my-xxl-5 my-md-1 my-sm-1 card d-flex align-items-center" style="width: 100% !important; height: 73px !important;">
+                        <p class=" fs-4" style="margin-top: 10%;">Férias</p>
+                    </div>
+                    <div onclick="documentos()" class="my-xxl-5 my-md-1 my-sm-1 card d-flex align-items-center" style="width: 100% !important; height: 73px !important;">
+                        <p class=" fs-4" style="margin-top: 10%;">Documentos</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class=" section-home-funcionario">
+
+    </section>
+    
+</body>
+</html>
